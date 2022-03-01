@@ -14,11 +14,11 @@ document.getElementById("player_question").innerHTML="Question Turn - " + player
 document.getElementById("player_answer").innerHTML="Answer Turn - " + player2_name;
 
 function send() {
-    get_word=document.getElementById("word").value;
-    word=get_word.toLowerCase();
-    console.log("word in lowerCase="+word);
+    get_number=document.getElementById("number").value;
+    number=get_number.toLowerCase();
+    console.log("number in lowerCase="+number);
 
-    charAt1 = word.charAt(1);
+    charAt1 = number.charAt(1);
     console.log(charAt1);
 
     length_divide_2=Math.floor(word.length/2);
@@ -39,5 +39,5 @@ function send() {
     check_button= "<br><br><button class='btn btn-info' onclick='check()'>Check</button>";
     row = question_word+input_box + check_button;
     document.getElementById("output").innerHTML = row;
-    document.getElementById("word").value="";
+    document.getElementById("number").value="";
 }
